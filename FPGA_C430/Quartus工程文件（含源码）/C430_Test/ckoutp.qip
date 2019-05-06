@@ -1,0 +1,9 @@
+set_global_assignment -name IP_TOOL_NAME "ALTDDIO_OUT"
+set_global_assignment -name IP_TOOL_VERSION "12.0"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "ckoutp.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "ckoutp.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "ckoutp_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "ckoutp_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "ckoutp.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "ckoutp.cmp"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "ckoutp.ppf"]

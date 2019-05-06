@@ -1,0 +1,3 @@
+1. 该代码开发时是在硬盘的分区E:  ， 可将C430_Test文件夹直接拷贝至E盘更目录下，用quautus II打开；quartusII 12.0 32位版本下编译； 
+
+2. 自检程序的verilog源代码在C430_Test\Src目录下； NIOS源程序在C430_Test\hello_world_0目录下；

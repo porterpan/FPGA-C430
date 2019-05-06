@@ -1,0 +1,178 @@
+Flow report for C430_Test
+Mon Apr 07 13:40:10 2014
+Quartus II 32-bit Version 12.0 Build 178 05/31/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------+
+; Flow Summary                                                                   ;
++------------------------------------+-------------------------------------------+
+; Flow Status                        ; Successful - Mon Apr 07 13:40:01 2014     ;
+; Quartus II 32-bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
+; Revision Name                      ; C430_Test                                 ;
+; Top-level Entity Name              ; Test_top                                  ;
+; Family                             ; Cyclone IV E                              ;
+; Device                             ; EP4CE30F23C8                              ;
+; Timing Models                      ; Final                                     ;
+; Total logic elements               ; 6,488 / 28,848 ( 22 % )                   ;
+;     Total combinational functions  ; 5,437 / 28,848 ( 19 % )                   ;
+;     Dedicated logic registers      ; 4,255 / 28,848 ( 15 % )                   ;
+; Total registers                    ; 4401                                      ;
+; Total pins                         ; 227 / 329 ( 69 % )                        ;
+; Total virtual pins                 ; 0                                         ;
+; Total memory bits                  ; 90,533 / 608,256 ( 15 % )                 ;
+; Embedded Multiplier 9-bit elements ; 4 / 132 ( 3 % )                           ;
+; Total PLLs                         ; 3 / 4 ( 75 % )                            ;
++------------------------------------+-------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/07/2014 13:37:05 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; C430_Test           ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                       ;
++-------------------------------------+---------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+---------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 219948116786192.139684902511316       ; --            ; --          ; --         ;
+; IP_TOOL_ENV                         ; sopc                                  ; --            ; NIOSTOP     ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                                ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                                ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTDDIO_BIDIR                         ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTDQ                                 ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTDDIO_OUT                           ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; FIFO                                  ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; RAM: 2-PORT                           ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; RAM: 2-PORT                           ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; RAM: 2-PORT                           ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; ALTPLL                                ; --            ; --          ; --         ;
+; IP_TOOL_NAME                        ; sopc                                  ; --            ; NIOSTOP     ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; --          ; --         ;
+; IP_TOOL_VERSION                     ; 12.0                                  ; --            ; NIOSTOP     ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL1.cmp                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL1.ppf                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL2.cmp                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL2.ppf                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; mybidir.bsf                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; mybidir_inst.v                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; mybidir_bb.v                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; mybidir.inc                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; mybidir.cmp                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; mybidir.ppf                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; mydq.bsf                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; mydq_inst.v                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; mydq_bb.v                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; mydq.inc                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; mydq.cmp                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; mydq.ppf                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; ckoutp.bsf                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; ckoutp_inst.v                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; ckoutp_bb.v                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ckoutp.inc                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; ckoutp.cmp                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; ckoutp.ppf                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; DISP_FIFO_bb.v                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; dpram_128w16_64r32_bb.v               ; --            ; --          ; --         ;
+; MISC_FILE                           ; dpram_64w32_64r32_bb.v                ; --            ; --          ; --         ;
+; MISC_FILE                           ; dpram_1024w8_1024r8_bb.v              ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL3_bb.v                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; PLL3.ppf                              ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                     ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                     ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                            ; --            ; --          ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                            ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; Test_top    ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Test_top    ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; Test_top    ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --         ;
+; SOPC_BUILDER_SIGNATURE_ID           ; F07bcb74500c000001416576cf91          ; --            ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; Test_top                              ; C430_Test     ; --          ; --         ;
++-------------------------------------+---------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:10     ; 1.0                     ; 399 MB              ; 00:01:05                           ;
+; Fitter                    ; 00:01:23     ; 2.2                     ; 573 MB              ; 00:01:30                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 285 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:18     ; 1.6                     ; 386 MB              ; 00:00:17                           ;
+; Total                     ; 00:02:57     ; --                      ; --                  ; 00:02:57                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; zbo              ; Windows XP ; 5.1        ; i686           ;
+; Fitter                    ; zbo              ; Windows XP ; 5.1        ; i686           ;
+; Assembler                 ; zbo              ; Windows XP ; 5.1        ; i686           ;
+; TimeQuest Timing Analyzer ; zbo              ; Windows XP ; 5.1        ; i686           ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off C430_Test -c C430_Test
+quartus_fit --read_settings_files=off --write_settings_files=off C430_Test -c C430_Test
+quartus_asm --read_settings_files=off --write_settings_files=off C430_Test -c C430_Test
+quartus_sta C430_Test -c C430_Test
+
+
+

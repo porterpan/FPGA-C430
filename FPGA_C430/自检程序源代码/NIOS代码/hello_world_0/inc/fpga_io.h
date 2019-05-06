@@ -1,0 +1,13 @@
+
+#include "system.h"
+
+
+//IO Set function
+#define	SET_USB_SCS_O(a)	IOWR_ALTERA_AVALON_PIO_DATA(USB_SCS_O_BASE, a)
+#define	SET_USB_SDI_O(a)	IOWR_ALTERA_AVALON_PIO_DATA(USB_SDI_O_BASE, a)
+#define	SET_USB_SCK_O(a)	IOWR_ALTERA_AVALON_PIO_DATA(USB_SCK_O_BASE, a)
+
+//IO Get function
+#define	GET_SDO_I()	    	IORD_ALTERA_AVALON_PIO_DATA(USB_SDO_I_BASE			)
+#define	GET_INT_I()	    	IORD_ALTERA_AVALON_PIO_DATA(USB_INT_I_BASE			)
+

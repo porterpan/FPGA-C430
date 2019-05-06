@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Apr 07 13:39:44 2014
+Quartus II 32-bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
+Revision Name : C430_Test
+Top-level Entity Name : Test_top
+Family : Cyclone IV E
+Device : EP4CE30F23C8
+Timing Models : Final
+Total logic elements : 6,488 / 28,848 ( 22 % )
+    Total combinational functions : 5,437 / 28,848 ( 19 % )
+    Dedicated logic registers : 4,255 / 28,848 ( 15 % )
+Total registers : 4401
+Total pins : 227 / 329 ( 69 % )
+Total virtual pins : 0
+Total memory bits : 90,533 / 608,256 ( 15 % )
+Embedded Multiplier 9-bit elements : 4 / 132 ( 3 % )
+Total PLLs : 3 / 4 ( 75 % )

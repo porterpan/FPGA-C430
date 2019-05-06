@@ -1,0 +1,185 @@
+
+State Machine - |Test_top|ddr_top:ddrtop|ddr_ctrl:ddrctrl|ictrl
+Name ictrl.RFRSH_WT1 ictrl.RFRSH_WT ictrl.INIT_END ictrl.RW_RFRSH ictrl.RPCH_NOP ictrl.RACT_NOP ictrl.WPCH_NOP ictrl.WACT_NOP ictrl.RD_PCH ictrl.READS ictrl.RACTIVE ictrl.WRT_PCH ictrl.WPCH_PRE ictrl.WRITES ictrl.ACTIVES ictrl.WAIT_OP ictrl.LOAD_EMROCT2 ictrl.LOAD_EMROCT1 ictrl.LOAD_MRSDLL ictrl.INIT_RFRSH1 ictrl.INIT_PCH2 ictrl.LOAD_MRDLL1 ictrl.LOAD_EMR ictrl.LOAD_MRS ictrl.LOAD_EMRS ictrl.INIT_PCH1 ictrl.DRINIT1 ictrl.DRINIT0 ictrl.INIT_IDLE 
+ictrl.INIT_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ictrl.DRINIT0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+ictrl.DRINIT1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+ictrl.INIT_PCH1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+ictrl.LOAD_EMRS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+ictrl.LOAD_MRS 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+ictrl.LOAD_EMR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+ictrl.LOAD_MRDLL1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+ictrl.INIT_PCH2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+ictrl.INIT_RFRSH1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+ictrl.LOAD_MRSDLL 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+ictrl.LOAD_EMROCT1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.LOAD_EMROCT2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.WAIT_OP 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.ACTIVES 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.WRITES 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.WPCH_PRE 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.WRT_PCH 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RACTIVE 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.READS 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RD_PCH 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.WACT_NOP 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.WPCH_NOP 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RACT_NOP 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RPCH_NOP 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RW_RFRSH 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.INIT_END 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RFRSH_WT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ictrl.RFRSH_WT1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Test_top|ddr_top:ddrtop|ddr_rw:ddr_rw|CTRL
+Name CTRL.DRRFRSH CTRL.DRREAD CTRL.DRWRT CTRL.DRWAIT CTRL.DRWRT2 CTRL.DRWRT1 CTRL.IDLE 
+CTRL.IDLE 0 0 0 0 0 0 0 
+CTRL.DRWRT1 0 0 0 0 0 1 1 
+CTRL.DRWRT2 0 0 0 0 1 0 1 
+CTRL.DRWAIT 0 0 0 1 0 0 1 
+CTRL.DRWRT 0 0 1 0 0 0 1 
+CTRL.DRREAD 0 1 0 0 0 0 1 
+CTRL.DRRFRSH 1 0 0 0 0 0 1 
+
+State Machine - |Test_top|UART_TOP:UARTt|UART_TX:I_UART_TX|UART_TX_CS
+Name UART_TX_CS.FINISH UART_TX_CS.SEND_STOP UART_TX_CS.SEND_PARITY UART_TX_CS.SEND_DATA UART_TX_CS.SEND_START UART_TX_CS.IDLE 
+UART_TX_CS.IDLE 0 0 0 0 0 0 
+UART_TX_CS.SEND_START 0 0 0 0 1 1 
+UART_TX_CS.SEND_DATA 0 0 0 1 0 1 
+UART_TX_CS.SEND_PARITY 0 0 1 0 0 1 
+UART_TX_CS.SEND_STOP 0 1 0 0 0 1 
+UART_TX_CS.FINISH 1 0 0 0 0 1 
+
+State Machine - |Test_top|DS1302Z_TOP:RTCt|RTC_FSM_CS
+Name RTC_FSM_CS.READ_DAY RTC_FSM_CS.READ_MONTH RTC_FSM_CS.READ_DATE RTC_FSM_CS.READ_HR RTC_FSM_CS.READ_MIN RTC_FSM_CS.INIT_SEC RTC_FSM_CS.INIT_TRICKLE RTC_FSM_CS.INIT_CONTROL RTC_FSM_CS.INIT_YEAR RTC_FSM_CS.INIT_DAY RTC_FSM_CS.INIT_MONTH RTC_FSM_CS.INIT_DATE RTC_FSM_CS.INIT_HR RTC_FSM_CS.INIT_MIN RTC_FSM_CS.READ_SEC RTC_FSM_CS.READ_YEAR 
+RTC_FSM_CS.READ_SEC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+RTC_FSM_CS.INIT_MIN 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
+RTC_FSM_CS.INIT_HR 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
+RTC_FSM_CS.INIT_DATE 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
+RTC_FSM_CS.INIT_MONTH 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
+RTC_FSM_CS.INIT_DAY 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
+RTC_FSM_CS.INIT_YEAR 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
+RTC_FSM_CS.INIT_CONTROL 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.INIT_TRICKLE 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.INIT_SEC 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.READ_MIN 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.READ_HR 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.READ_DATE 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.READ_MONTH 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.READ_DAY 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+RTC_FSM_CS.READ_YEAR 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+
+State Machine - |Test_top|DS1302Z_TOP:RTCt|DS1302_CTL:I_DS1302_CTL|SM_RTC_CS
+Name SM_RTC_CS.READ_DATA SM_RTC_CS.SEND_DATA SM_RTC_CS.SEND_ADDR SM_RTC_CS.IDLE SM_RTC_CS.FINISHED 
+SM_RTC_CS.IDLE 0 0 0 0 0 
+SM_RTC_CS.SEND_ADDR 0 0 1 1 0 
+SM_RTC_CS.SEND_DATA 0 1 0 1 0 
+SM_RTC_CS.READ_DATA 1 0 0 1 0 
+SM_RTC_CS.FINISHED 0 0 0 1 1 
+
+State Machine - |Test_top|IR_TOP:IR_TOP|ctrl
+Name ctrl.IR_REPEAT ctrl.IR_END ctrl.IR_BIN ctrl.IR_IDLE 
+ctrl.IR_IDLE 0 0 0 0 
+ctrl.IR_BIN 0 0 1 1 
+ctrl.IR_END 0 1 0 1 
+ctrl.IR_REPEAT 1 0 0 1 
+
+State Machine - |Test_top|audio_wm:audio_wm|i2c_ctrl
+Name i2c_ctrl.I2C_IDLE i2c_ctrl.I2C_END i2c_ctrl.I2C_SET 
+i2c_ctrl.I2C_IDLE 0 0 0 
+i2c_ctrl.I2C_SET 1 0 1 
+i2c_ctrl.I2C_END 1 1 0 
+
+State Machine - |Test_top|video_saa:video_saa|i2c_ctrl
+Name i2c_ctrl.I2C_IDLE i2c_ctrl.I2C_END i2c_ctrl.I2C_SET 
+i2c_ctrl.I2C_IDLE 0 0 0 
+i2c_ctrl.I2C_SET 1 0 1 
+i2c_ctrl.I2C_END 1 1 0 
+
+State Machine - |Test_top|LCD_top:LCDt|dctrl
+Name dctrl.DISP_FRMW1 dctrl.DISP_FRMW0 dctrl.DISP_FRMI dctrl.DISP_IDLE 
+dctrl.DISP_IDLE 0 0 0 0 
+dctrl.DISP_FRMI 0 0 1 1 
+dctrl.DISP_FRMW0 0 1 0 1 
+dctrl.DISP_FRMW1 1 0 0 1 
+
+State Machine - |Test_top|LCD_top:LCDt|pctrl
+Name pctrl.PAR_END pctrl.PAR_8MS pctrl.PAR_DLY1 pctrl.PAR_DLY pctrl.PAR_NXT pctrl.PAR_WAIT pctrl.PAR_WINIT pctrl.PAR_IDLE 
+pctrl.PAR_IDLE 0 0 0 0 0 0 0 0 
+pctrl.PAR_WINIT 0 0 0 0 0 0 1 1 
+pctrl.PAR_WAIT 0 0 0 0 0 1 0 1 
+pctrl.PAR_NXT 0 0 0 0 1 0 0 1 
+pctrl.PAR_DLY 0 0 0 1 0 0 0 1 
+pctrl.PAR_DLY1 0 0 1 0 0 0 0 1 
+pctrl.PAR_8MS 0 1 0 0 0 0 0 1 
+pctrl.PAR_END 1 0 0 0 0 0 0 1 
+
+State Machine - |Test_top|LCD_top:LCDt|wctrl
+Name wctrl.W_WTPIX wctrl.W_END4 wctrl.W_END3 wctrl.W_END2 wctrl.W_END1 wctrl.W_SETWR3 wctrl.W_SETWR2 wctrl.W_SETWR1 wctrl.W_SETWR wctrl.W_INIT wctrl.W_IDLE 
+wctrl.W_IDLE 0 0 0 0 0 0 0 0 0 0 0 
+wctrl.W_INIT 0 0 0 0 0 0 0 0 0 1 1 
+wctrl.W_SETWR 0 0 0 0 0 0 0 0 1 0 1 
+wctrl.W_SETWR1 0 0 0 0 0 0 0 1 0 0 1 
+wctrl.W_SETWR2 0 0 0 0 0 0 1 0 0 0 1 
+wctrl.W_SETWR3 0 0 0 0 0 1 0 0 0 0 1 
+wctrl.W_END1 0 0 0 0 1 0 0 0 0 0 1 
+wctrl.W_END2 0 0 0 1 0 0 0 0 0 0 1 
+wctrl.W_END3 0 0 1 0 0 0 0 0 0 0 1 
+wctrl.W_END4 0 1 0 0 0 0 0 0 0 0 1 
+wctrl.W_WTPIX 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Test_top|LCD_top:LCDt|ctrl
+Name ctrl.DE_LAY ctrl.WT_PIX ctrl.WRT_PIX ctrl.WT_PAR ctrl.SET_PAR ctrl.SET_RST ctrl.LCD_INIT ctrl.LCD_IDLE ctrl.DE_LAY1 
+ctrl.LCD_IDLE 0 0 0 0 0 0 0 0 0 
+ctrl.LCD_INIT 0 0 0 0 0 0 1 1 0 
+ctrl.SET_RST 0 0 0 0 0 1 0 1 0 
+ctrl.SET_PAR 0 0 0 0 1 0 0 1 0 
+ctrl.WT_PAR 0 0 0 1 0 0 0 1 0 
+ctrl.WRT_PIX 0 0 1 0 0 0 0 1 0 
+ctrl.WT_PIX 0 1 0 0 0 0 0 1 0 
+ctrl.DE_LAY 1 0 0 0 0 0 0 1 0 
+ctrl.DE_LAY1 0 0 0 0 0 0 0 1 1 
+
+State Machine - |Test_top|NIOSTOP:NIOSTOP_inst|sdram:the_sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |Test_top|NIOSTOP:NIOSTOP_inst|sdram:the_sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |Test_top|NIOSTOP:NIOSTOP_inst|sdram:the_sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |Test_top|NIOSTOP:NIOSTOP_inst|sdram:the_sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |Test_top|NIOSTOP:NIOSTOP_inst|cpu:the_cpu|cpu_nios2_oci:the_cpu_nios2_oci|cpu_jtag_debug_module_wrapper:the_cpu_jtag_debug_module_wrapper|cpu_jtag_debug_module_tck:the_cpu_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

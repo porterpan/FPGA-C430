@@ -1,0 +1,5 @@
+Info: Saving your IP search path in C:\SPB_Data\.altera.quartus\ip\12.0\ip_search_path\user_components.ipx
+Info: Using factories: CuspFactory, ImportFactory, DSPBuilderFactory, JarFactory, QvarFactory, TclModuleFactory, MegaVariationFactory, BeanElementFactory, LegacyFactory, DDRLegacyFactory, PresetFactory, EmbeddedSwTclDriverFactory, QsysFactory
+Progress: (0) searching D:/FPGA开发板/FPGA_C430/Quartus工程文件（含源码）/C430_Test/12.0 (command line switch)
+Info: D:/FPGA开发板/FPGA_C430/Quartus工程文件（含源码）/C430_Test/12.0 matched 1 files in 0.00 seconds
+Info: Found 0 components

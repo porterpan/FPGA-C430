@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr 07 13:38:18 2014
+Quartus II 32-bit Version : 12.0 Build 178 05/31/2012 SJ Full Version
+Revision Name : C430_Test
+Top-level Entity Name : Test_top
+Family : Cyclone IV E
+Total logic elements : 6,977
+    Total combinational functions : 5,427
+    Dedicated logic registers : 4,384
+Total registers : 4424
+Total pins : 227
+Total virtual pins : 0
+Total memory bits : 90,533
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 3

@@ -1,0 +1,29 @@
+# clk
+# cpu
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu.ocp]
+# sysid
+# sdram
+# epcs
+# jtag_uart
+# pio_led
+# LAN
+# LAN_CS
+# LAN_nINT
+# LAN_RSTN
+# USB_SCS_O
+# USB_SDO_I
+# USB_SDI_O
+# USB_SCK_O
+# USB_INT_I
+# NET_TESTDO
+# NET_EN
+# USB_EN
+# USBSD_SEL
+# USBSD_RDO
+# USBSD_RVLD
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "F07BCB74500C000001416576CF91"
+set_global_assignment -entity "NIOSTOP" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "NIOSTOP" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "NIOSTOP" -name IP_TOOL_ENV "sopc"
